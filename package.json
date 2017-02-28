@@ -1,0 +1,24 @@
+{
+  "name": "HTMLframe",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrent \"lite-server\" \"gulp\" "
+  },
+  "keywords": [],
+  "author": "Roman Cz",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "scss-framework": "^1.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.3.0",
+    "gulp": "*",
+    "gulp-clean-css": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "*",
+    "gulp-watch": "*",
+    "lite-server": "^2.2.2"
+  }
+}
