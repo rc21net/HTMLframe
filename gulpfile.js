@@ -4,15 +4,17 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var rename = require('gulp-rename');
 var cleanCss = require('gulp-clean-css');
-//var postcss = require('gulp-postcss');
-//var precss = require("precss");
-//var cssnano = require("cssnano");
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 var path = {
 	scss: 'scss/**/*.scss',
 	css: 'css/',
 	cssDebug: 'css/debug',
-	cssProd: 'css/prod'
+	cssProd: 'css/prod',
+	js: 'jssource/',
+	jsDebug: 'js/debug',
+	jsProd: 'js/prod'
 };
 
 var cleanCssOptions = {
@@ -52,6 +54,13 @@ gulp.task('scss:p', function () {
 		.pipe(cleanCss(cleanCssOptions))
 		.pipe(rename({dirname: ''}))
 		.pipe(gulp.dest(path.cssProd));
+});
+
+gulp.task('js:p', function() {
+	gulp.src(path.js)
+		.pipe(concat('all.min.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest(path.jsProd));
 });
 
 gulp.task('watch', function(){
