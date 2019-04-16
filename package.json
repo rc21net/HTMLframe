@@ -1,5 +1,5 @@
 {
-  "name": "HTMLframe",
+  "name": "html-frame",
   "version": "2.0.0",
   "scripts": {
     "start": "concurrent \"lite-server\" \"gulp\" "
@@ -8,18 +8,18 @@
   "author": "Roman Cz",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.0.0-beta",
-    "scss-framework": "^1.3.0"
+    "bootstrap": "^4.3.1",
+    "scss-framework": "^2.0.0"
   },
   "devDependencies": {
-    "concurrently": "^3.3.0",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.4",
+    "concurrently": "^4.1.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.3.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
     "lite-server": "^2.4.0",
     "scss-sprite": "^1.0.0"
