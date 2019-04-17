@@ -2,7 +2,7 @@
   "name": "html-frame",
   "version": "2.0.0",
   "scripts": {
-    "start": "concurrent \"lite-server\" \"gulp\" "
+    "start": "concurrently \"lite-server\" \"gulp\" "
   },
   "keywords": [],
   "author": "Roman Cz",
