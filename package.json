@@ -2,7 +2,8 @@
   "name": "html-frame",
   "version": "2.0.0",
   "scripts": {
-    "start": "concurrently \"lite-server\" \"gulp\" "
+    "start": "concurrently \"lite-server\" \"gulp\" ",
+    "build": "gulp build"
   },
   "keywords": [],
   "author": "Roman Cz",
