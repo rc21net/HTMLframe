@@ -78,9 +78,10 @@ gulp.task('sprite', async function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(path.scss, ['scss']);
-    gulp.watch(path.jsWatch, ['js'])
+    gulp.watch(path.scss, gulp.series('scss'));
+    gulp.watch(path.jsWatch, gulp.series('js'))
 });
-gulp.task('default', gulp.series('watch'));
 
 gulp.task('build', gulp.series('sprite', 'js', 'scss'));
+
+gulp.task('default', gulp.series('build', 'watch'));
