@@ -1,10 +1,8 @@
 /node_modules
-/package-lock.json
 /.idea
-/css
-/production/images/interface.svg
-/production/styles.css
-/production/styles.css.map
-/scss/_sprite.scss
-/production/scripts.js.map
-/production/scripts.js
+/dist/images/interface.svg
+/dist/styles.css
+/dist/styles.css.map
+/dist/scripts.js.map
+/dist/scripts.js
+/src/scss/_sprite.scss
